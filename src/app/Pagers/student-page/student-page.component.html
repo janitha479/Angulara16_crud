@@ -35,7 +35,7 @@
                         <td>{{item.created_at | date}}</td>
                         <td>
                             <a routerLink="/student/edit/{{item.id}}" class="btn btn-primary">Edit</a>
-                            <button  class="btn btn-danger">Delete</button>
+                            <button class="btn btn-danger" (click)="deleteStudent(item.id)">Delete</button>
                         </td>
 
                     </tr>

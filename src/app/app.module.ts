@@ -11,6 +11,7 @@ import { NavbarComponent } from './Pagers/Partials/navbar/navbar.component';
 import { StudentCreateComponent } from './Pagers/student-create/student-create.component';
 import { SpinnerComponent } from './Pagers/Partials/spinner/spinner.component';
 import { StudentPageComponent } from './Pagers/student-page/student-page.component';
+import { StudentEditComponent } from './Pagers/student-edit/student-edit.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { StudentPageComponent } from './Pagers/student-page/student-page.compone
     NavbarComponent,
     StudentCreateComponent,
     SpinnerComponent,
-    StudentPageComponent
+    StudentPageComponent,
+    StudentEditComponent
   ],
   imports: [
     BrowserModule,

@@ -25,4 +25,22 @@ export class StudentPageComponent {
     });
   }
 
+  deleteStudent(id: number) {
+    if (confirm('Are you sure you want to delete this student?')) {
+      this.studentService.deleteStdByID(id).subscribe({
+        next: (res: any) => {
+          console.log(res);
+          alert(res.Status || 'Student Deleted Successfully');
+          // Refresh the student list after deletion
+          this.getStudentList();
+        },
+        error: (err) => {
+          console.error('Error deleting student:', err);
+          alert(err.error.message || 'Failed to delete the student');
+        },
+      });
+    }
+  }
+  
+
 }
