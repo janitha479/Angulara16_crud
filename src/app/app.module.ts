@@ -10,6 +10,7 @@ import { HomePageComponent } from './Pagers/home-page/home-page.component';
 import { NavbarComponent } from './Pagers/Partials/navbar/navbar.component';
 import { StudentCreateComponent } from './Pagers/student-create/student-create.component';
 import { SpinnerComponent } from './Pagers/Partials/spinner/spinner.component';
+import { StudentPageComponent } from './Pagers/student-page/student-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SpinnerComponent } from './Pagers/Partials/spinner/spinner.component';
     ContactUsComponent,
     NavbarComponent,
     StudentCreateComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    StudentPageComponent
   ],
   imports: [
     BrowserModule,
