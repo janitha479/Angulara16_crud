@@ -44,9 +44,9 @@ npm install
    composer install
    ```
 3. Set up the `.env` file and configure your database connection.
-4. Run database migrations and seeders:
+4. Run database migrations :
    ```bash
-   php artisan migrate --seed
+   php artisan migrate 
    ```
 5. Start the Laravel development server:
    ```bash
